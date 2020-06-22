@@ -1,0 +1,29 @@
+video{
+    /*设置视频最小宽度和高度*/
+    min-width: 100%;
+    min-height: 100%;
+    /**/
+    width:auto;
+    height:auto;
+    /*生成绝对定位的元素，相对于浏览器窗口进行定位。*/
+    position: fixed;
+    /*这里我试了一下好像只要是矩形的四个角的的点都行,也就是说right:0;bottom:0;也可以*/
+    left: 0;
+    top: 0;
+    /*将视频放在元素的堆叠顺序最底层，以防覆盖其他东西*/
+    z-index: -9999;
+}
+source{  
+    min-width: 100%;  
+    min-height: 100%;  
+    height: auto;  
+    width: auto;  
+}
+/*
+    -webkit-filter: grayscale(20%);
+    //添加灰度蒙版，如果设定为100%则视频显示为黑白
+*/ 
+/*video加滤镜*/
+/*filter: blur(15px); //背景模糊设置 */
+/*-webkit-filter: grayscale(100%);*/ 
+/*filter:grayscale(100%); //背景灰度设置*/ 
