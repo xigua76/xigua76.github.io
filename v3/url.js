@@ -14,7 +14,8 @@ var items = [
 'vod.xg1155.com:9999',
 'vod.xg1177.com:9999',
 'vod.xg2233.com:9999',
-'vod.xg2299.com:9999'
+'vod.xg2299.com:9999',
+'www.xg0077.com','www.xg0099.com','www.xg1155.com','www.xg1177.com','www.xg2233.com','www.xg2299.com'
 ];
 var item=getRandomArrayElements(items, 3);
 var djgk = ['点击观看'];
