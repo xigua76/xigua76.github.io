@@ -17,6 +17,9 @@
 <div class="container"><div style="margin:0 auto;width:240px;"><div class="list-group">
 <div class="list-group-item active"><h4 class="list-group-item-heading"><span class="glyphicon glyphicon-expand"></span>&nbsp;领略JAV经典盛宴</h4></div>
 <script type="text/javascript">
+function Random(min, max) {
+    return Math.round(Math.random() * (max - min)) + min;
+}
 function getRandomArrayElements(arr, count) {
     var shuffled = arr.slice(0), i = arr.length, min = i - count, temp, index;
     while (i-- > min) {
@@ -28,22 +31,19 @@ function getRandomArrayElements(arr, count) {
     return shuffled.slice(min);
 }
 var items = [
-'vod.xg0077.com:9999','vod.xg0099.com:9999',
-'vod.xg1155.com:9999','vod.xg1177.com:9999',
-'vod.xg2233.com:9999','vod.xg2299.com:9999',
-'www.xg0077.com','xg0077.com',
-'www.xg0099.com','xg0099.com',
-'www.xg1155.com','xg1155.com',
-'www.xg1177.com','xg1177.com',
-'www.xg2233.com','xg2233.com',
-'www.xg2299.com','xg2299.com'
+'vod.xg0077.com','vod.xg0099.com',
+'vod.xg1155.com','vod.xg1177.com',
+'vod.xg2233.com','vod.xg2299.com',
+'xg0077.com','xg0099.com',
+'xg1155.com','xg1177.com',
+'xg2233.com','xg2299.com'
 ];
 var item=getRandomArrayElements(items, 5);
-document.write('<a href="http://' + item[0] + '" target="_blank" class="list-group-item"><p class="list-group-item-text">' + item[0] + '<em class="pull-right">点击观看</em></p></a>');
-document.write('<a href="http://' + item[1] + '" target="_blank" class="list-group-item"><p class="list-group-item-text">' + item[1] + '<em class="pull-right">点击观看</em></p></a>');
-document.write('<a href="http://' + item[2] + '" target="_blank" class="list-group-item"><p class="list-group-item-text">' + item[2] + '<em class="pull-right">点击观看</em></p></a>');
-document.write('<a href="http://' + item[3] + '" target="_blank" class="list-group-item"><p class="list-group-item-text">' + item[3] + '<em class="pull-right">点击观看</em></p></a>');
-document.write('<a href="http://' + item[4] + '" target="_blank" class="list-group-item"><p class="list-group-item-text">' + item[4] + '<em class="pull-right">点击观看</em></p></a>');
+document.write('<a href="http://' + item[0] + ':' + Random(2000,9999) + '" target="_blank" class="list-group-item"><p class="list-group-item-text">' + item[0] + '<em class="pull-right">点击观看</em></p></a>');
+document.write('<a href="http://' + item[1] + ':' + Random(2000,9999) + '" target="_blank" class="list-group-item"><p class="list-group-item-text">' + item[1] + '<em class="pull-right">点击观看</em></p></a>');
+document.write('<a href="http://' + item[2] + ':' + Random(2000,9999) + '" target="_blank" class="list-group-item"><p class="list-group-item-text">' + item[2] + '<em class="pull-right">点击观看</em></p></a>');
+document.write('<a href="http://' + item[3] + ':' + Random(2000,9999) + '" target="_blank" class="list-group-item"><p class="list-group-item-text">' + item[3] + '<em class="pull-right">点击观看</em></p></a>');
+document.write('<a href="http://' + item[4] + ':' + Random(2000,9999) + '" target="_blank" class="list-group-item"><p class="list-group-item-text">' + item[4] + '<em class="pull-right">点击观看</em></p></a>');
 </script>
 </div></div></div><!--
 <div class="container">
